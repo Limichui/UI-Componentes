@@ -1,7 +1,3 @@
-COMPONENTES DE IU
-- menu-radial-animado: Menú radial brillante animado en HTML, CSS y JS.
-- card-animado-1: Animación de una tarjeta (card) brillante con HTML y CSS.
-
 # 🚀 UI Components Library
 
 Biblioteca de componentes UI reutilizables, modernos y escalables.  
@@ -44,12 +40,12 @@ Es especialmente útil para:
 - Button  
 - Input & Forms  
 - Modal  
-- Card  
+- Cards
+    - [menu-radial-animado](https://github.com/Limichui/UI-Componentes/tree/master/cards/profile-card-1): Card de un portafolio en HTML, CSS y JS
 - Alert / Toast  
 - Loader / Spinner  
 - Tabs / Accordion  
 - Tooltip 
-> *(Agrega o elimina según los componentes que tengas implementados)*
 
 ---
 
