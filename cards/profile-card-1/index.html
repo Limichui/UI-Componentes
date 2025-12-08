@@ -1,9 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="utf-8">
         <title>Card Portafolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
+        <meta name="description" content="Tarjeta de perfil profesional con modo oscuro.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -13,14 +15,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        
         <div class="container">       
             <article class="card">
                 <div class='background'>
                     <img src="assets/avatar.jpg" alt="profile">
                 </div>
                 <div class='content'>
-                    <h2>Juancito Pinto
-                    </h2>
+                    <div class="header">
+                        <h2>Juancito Pinto</h2>
+                        <span class="divider">
+                            <button id="toggle-dark">🌙</button>
+                        </span>
+                    </div>
                     <p>
                         Ingeniero Full-stack en 
                         <a href="https://google.com" title="Google">
@@ -45,6 +52,7 @@
                 </div>
             </article>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
 

@@ -1,10 +1,40 @@
 :root {
     --background: #D8E3FA;
+    --card-bg: #FFFFFF;
     --white: #FFFFFF;
     --gray: #EAEAEC;
-    --text: #29283F;
+    --text: #FFFFFF;
+    --text-primary: #FFFFFF;
+    --text-secundary: #0c0e0d;
     --primary: #6f3ef6;
     --primary-darker: #502ab7;
+    --btn-bg: #FFFFFF;
+    --btn-bg-hover: #0c0e0d;
+    --btn-border-hover: #0c0e0d;
+}
+
+/* 🌙 Modo oscuro */
+.dark-mode {
+    --background: #f7fedd;
+    --card-bg: #0c0e0d;
+    --white: #FFFFFF;
+    --text: #29283F;
+    --text-primary: #b5e700;
+    --text-secundary: #FFFFFF;
+    --primary: #cbfe0b;
+    --primary-darker: #b5e700;
+    --btn-bg: #0c0e0d;
+    --btn-border-hover: #cbfe0b;
+
+
+
+    --border-normal: #bdbdbd;
+    --border-dark: #29283F;
+    
+
+    --text-dark: #29283F;
+    --text-white: #FFFFFF;
+
 }
 
 *, *::before, *::after {
@@ -32,7 +62,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     border-radius: 1.5rem;
-    background: white;
+    background: var(--card-bg);
     cursor: pointer;
     overflow: hidden;
     max-width: clamp(
@@ -67,10 +97,11 @@ body {
     padding: 1rem;
 }
 
-.content > h2 {
+.content > div > h2 {
     font-size: clamp(
         1.3rem, 2.5vw, 
         1.8rem);
+    color: var(--text-secundary);
     font-weight: 700;
     margin-bottom: clamp(
         0.35rem, 2vw, 
@@ -78,17 +109,35 @@ body {
     );
 }
 
+.header {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.header h2 {
+    margin: 0; 
+}
+.divider button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .content > p {
     font-size: clamp(1rem, 
         1.75vw, 1.1rem);
+    color: var(--text-secundary);
     font-weight: 400;
     margin: 0.4rem 0;
 }
 
 .content a {
-    color: var(
-        --primary-violet
-    );
+    color: var(--primary);
+    text-decoration: none;
+}
+.content a:hover {
+    text-decoration: underline;
 }
 
 .chips {
@@ -106,14 +155,16 @@ body {
     transition: all 0.3s;
     font-weight: 500;
     border: 1px solid var(
-        --text);
-    color: var(--text);
+        --text-secundary);
+    color: var(--text-secundary);
+    background-color: var(--btn-bg);
 }
 
 .chip:hover {
-    background: var(
-        --text);
-    color: var(--white)
+    color: var(--text-primary);
+    background-color: var(--btn-bg-hover);
+    border-color: var(--btn-border-hover);
+
 }
 
 .action-buttons {
@@ -129,7 +180,7 @@ body {
 .action-buttons a {
     background: var(
         --primary);
-    color: white;
+    color: var(--text);
     padding: 0.75rem;
     text-decoration: none;
     border-radius: 0.75rem;
@@ -152,9 +203,9 @@ body {
 
 .action-buttons a.secondary {
     background: inherit;
-    color: var(--text);
+    color: var(--text-secundary);
     border: 1px solid var(
-        --text);
+        --text-secundary);
     flex: 1 0 5rem;
 }
 

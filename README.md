@@ -41,8 +41,8 @@ Es especialmente útil para:
 - Input & Forms  
 - Modal  
 - Cards
-    - [menu-radial-animado](https://github.com/Limichui/UI-Componentes/tree/master/cards/profile-card-1): Card de un portafolio en HTML, CSS y JS
-- Alert / Toast  
+    - [responsive-profile-card-1](https://github.com/Limichui/UI-Componentes/tree/master/cards/profile-card-1): Card de un portafolio en HTML, CSS y JS
+- Alert / Toast 
 - Loader / Spinner  
 - Tabs / Accordion  
 - Tooltip 
