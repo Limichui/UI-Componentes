@@ -38,7 +38,9 @@ Es especialmente útil para:
     - [profile-1](https://github.com/Limichui/UI-Componentes/tree/master/profile/profile-1): Portafolio en HTML, CSS y JS. 
 - Navbar / Sidebar
 - Button  
-- Input & Forms  
+- Input & Forms 
+- password-checkers
+    - [password-validator-cyber-punk](https://github.com/Limichui/UI-Componentes/tree/master/password-checkers/password-validator-cyber-punk): Validador de contraseñas con indicadores de fuerza y requisitos, en HTML, CSS y JS.
 - Modal  
 - Cards
     - [responsive-profile-card-1](https://github.com/Limichui/UI-Componentes/tree/master/cards/profile-card-1): Card de un portafolio en HTML, CSS y JS

@@ -1,0 +1,204 @@
+:root {
+    --bg: #0a0a0f;
+    --primary: #ff00a0;
+    --primary-transparent: #9a00ff20;
+    --widget-bg: #12121b;
+    --secondary: #00ffff;
+    --hover: #1a1a2b;
+    --text: #d6e2ff;
+    --white: #ffffff;
+    --text-dark: #7df9ff;
+    --box-border: #312f47;
+    --danger: #ff005d;
+    --warning: #ffea00;
+    --success: #00ffb3;
+    --password-strength-bg: #181820;
+    --progress-bg: #26263a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: var(--text);
+    background-size: 4rem 4rem;
+    background-image: 
+        linear-gradient(
+            to right, 
+            var(--primary-transparent) 1px, 
+            transparent 1px),
+        linear-gradient(
+            to bottom, 
+            var(--primary-transparent) 1px, 
+            transparent 1px
+        );
+    /* subtle glow */
+    box-shadow: inset 0 0 60px #0f0f1f;
+}
+
+*::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.box {
+    background: var(--widget-bg);
+    color: var(--text);
+    padding: 0.75rem 1rem;
+    border-radius: 0.65rem;
+    max-width: 14rem;
+    width: 100%;
+    border: 1px solid var(--box-border);
+    box-shadow: 0 0 10px #9a00ff40, 0 0 20px #00ffff20;
+}
+
+.input__wrapper {
+    position: relative;
+    padding: 1rem 0 0;
+}
+
+.input__field {
+    border: 0;
+    border-bottom: 2px solid var(--secondary);
+    outline: 0;
+    font-size: 0.75rem;
+    color: var(--text);
+    padding: 0.25rem 0;
+    padding-right: 2rem;
+    width: 100%;
+    background: transparent;
+    transition: border-color 0.2s, box-shadow 0.3s;
+}
+
+.input__field::placeholder {
+    color: transparent;
+}
+
+.input__field:placeholder-shown ~ .input__label {
+    font-size: 0.75rem;
+    cursor: text;
+    color: var(--secondary);
+    top: 1.25rem;
+}
+
+label, 
+.input__field:focus ~ .input__label {
+    position: absolute;
+    top: 0.25rem;
+    display: block;
+    font-size: 0.725rem;
+    left: -0.0625rem;
+    color: var(--secondary);
+    transition: 0.3s;
+}
+
+.input__field:focus ~ .input__label {
+    color: var(--primary);
+}
+
+.input__field:focus {
+    border-bottom: 2px solid var(--primary);
+}
+
+.input__icon {
+    position: absolute;
+    bottom: -0.725rem;
+    right: -0.85rem;
+    width: 1.625rem;
+    height: 1.625rem;
+    padding: 0.15rem;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.password-strength {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.5rem;
+    background: var(--password-strength-bg);
+    box-shadow: inset 0 0 10px #9a00ff20;
+}
+
+.password-strength__description {
+    font-weight: bold;
+    font-size: 0.5rem;
+}
+
+.password-strength-indicator p {
+    font-weight: bold;
+}
+
+.password-strength-indicator__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+.password-strength-items {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 0.6rem;
+}
+
+.password-strength-items li {
+    height: 1rem;
+    display: flex;
+    gap: 0.125rem;
+    align-items: center;
+    font-size: 0.5rem;
+}
+
+.password-strength-items li img {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.progress {
+    height: 0.15rem;
+    width: 100%;
+    background: var(--progress-bg);
+    border-radius: 0.25rem;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+}
+
+.progress-bar {
+    height: 0.1875rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.progress-bar-danger {
+    background: var(--danger);
+}
+.progress-bar-warning {
+    background: var(--warning);
+}
+.progress-bar-success {
+    background: var(--success);
+}
+
+.label-danger {
+    color: var(--danger);
+}
+.label-warning {
+    color: var(--warning);
+}
+.label-success {
+    color: var(--success);
+}

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
+        <meta name="description" content="Validador de contraseñas con indicadores de fuerza y requisitos.">
+        <title>Password Checker Cyber Punk</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="input__wrapper">
+                <input
+                    id="password"
+                    type="password"
+                    class="input__field"
+                    placeholder="Your Password"
+                >
+                <label
+                    for="password"
+                    class="input__label"
+                >
+                    Password
+                </label>
+                <img
+                    alt="Eye Icon"
+                    title="Eye Icon"
+                    src="assets/eye.svg"
+                    class="input__icon"
+                >
+            </div>
+            <div class="password-strength">
+                <p class="password-strength__description">Su contraseña debe incluir</p>
+                <ul class="password-strength-items">
+                    <li class="low-upper-case">
+                        <img 
+                            src="assets/uncheck.svg" alt="Ticker" 
+                            title="Ticker" aria-hidden="true"
+                        >
+                        &nbsp;Mayusculas &amp; minusculas
+                    </li>
+                    <li class="one-number">
+                        <img 
+                            src="assets/uncheck.svg" alt="Ticker" 
+                            title="Ticker" aria-hidden="true"
+                        >
+                        &nbsp;Numeros (0-9)
+                    </li>
+                    <li class="one-special-char">
+                        <img 
+                            src="assets/uncheck.svg" alt="Ticker" 
+                            title="Ticker" aria-hidden="true"
+                        >
+                        &nbsp;Caracteres Especiales (!@#$%^&*)
+                    </li>
+                    <li class="eight-character">
+                        <img 
+                            src="assets/uncheck.svg" alt="Ticker" 
+                            title="Ticker" aria-hidden="true"
+                        >
+                        &nbsp;Al menos 8 caracteres
+                    </li>
+                </ul>
+                <div class="password-strength-indicator">
+                    <div class="password-strength-indicator__top">
+                        <p>Seguridad de la contraseña</p>
+                        <span class="label-danger" id="strength-label">Débil</span>
+                    </div>
+                    <p><span id="result"></span></p>
+                    <div class="progress">
+                        <div id="password-strength"
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width:0%; height: 2px;"
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
