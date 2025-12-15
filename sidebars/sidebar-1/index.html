@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
+    <meta name="description" content="Barra lateral de navegación con íconos, búsqueda y perfil de usuario.">
+    <title>Sidebar-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-top-wrapper">
+            <div class="sidebar-top">
+                <a href="#" class="logo__wrapper">
+                    <img src="assets/DC-logo.png" alt="Logo" class="logo-small">
+                    <span class="hide company-name">
+                        DC Comics
+                    </span>
+                </a>
+            </div>
+            <button class="expand-btn" type="button">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-labelledby="exp-btn" role="img">
+                    <title id="exp-btn">Expandir/Contraer Menú</title>
+                    <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="search__wrapper">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-labelledby="search-icon" role="img">
+                <title id="search-icon">Buscar</title>
+                <path
+                    d="M9 9L13 13M5.66667 10.3333C3.08934 10.3333 1 8.244 1 5.66667C1 3.08934 3.08934 1 5.66667 1C8.244 1 10.3333 3.08934 10.3333 5.66667C10.3333 8.244 8.244 10.3333 5.66667 10.3333Z"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <input type="text" placeholder="Buscar..." aria-labelledby="search-icon">
+        </div>
+        <div class="sidebar-links">
+            <ul>
+                <li>
+                    <a href="#dashboard" title="Dashboard" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-dashboard">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 13m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M13.45 11.55l2.05 -2.05" />
+                            <path d="M6.4 20a9 9 0 1 1 11.2 0z" />
+                        </svg>
+                        <span class="link hide">Panel de control</span>
+                        <span class="tooltip__content">Panel de control</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#analytics" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-graph">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M4 18v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                            <path d="M7 14l3 -3l2 2l3 -3l2 2" />
+                        </svg>
+                        <span class="link hide">Analítica</span>
+                        <span class="tooltip__content">Analítica</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#logs" title="Logs" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-logs">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 12h.01" />
+                            <path d="M4 6h.01" />
+                            <path d="M4 18h.01" />
+                            <path d="M8 18h2" />
+                            <path d="M8 12h2" />
+                            <path d="M8 6h2" />
+                            <path d="M14 6h6" />
+                            <path d="M14 12h6" />
+                            <path d="M14 18h6" />
+                        </svg>
+                        <span class="link hide">Registros</span>
+                        <span class="tooltip__content">Registros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#monitoring" title="Monitoring" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop-analytics">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
+                            <path d="M7 20h10" />
+                            <path d="M9 16v4" />
+                            <path d="M15 16v4" />
+                            <path d="M9 12v-4" />
+                            <path d="M12 12v-1" />
+                            <path d="M15 12v-2" />
+                            <path d="M12 12v-1" />
+                        </svg>
+                        <span class="link hide">Monitoreo</span>
+                        <span class="tooltip__content">Monitoreo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#users" title="Users" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                        </svg>
+                        <span class="link hide">Usuarios</span>
+                        <span class="tooltip__content">Usuarios</span>
+                    </a>
+                </li>
+        </div>
+
+        <div class="separator separator--top"></div>
+        <div class="sidebar-links">
+            <ul>
+                <li>
+                    <a href="#settings" title="Settings" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+                            </path>
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                        </svg>
+                        <span class="link hide">Ajustes</span>
+                        <span class="tooltip__content">Ajustes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notification" title="Notification" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bell">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                            <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                        </svg>
+                        <span class="link hide">Notificaciones</span>
+                        <span class="tooltip__content">Notificaciones</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#support" title="Support" class="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-info-square-rounded">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                            <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                        </svg>
+                        <span class="link hide">Soporte Técnico</span>
+                        <span class="tooltip__content">Soporte Técnico</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="separator"></div>
+        <div class="sidebar__profile">
+            <div class="avatar__wrapper">
+                <img class="avatar" src="assets/avatar1.jpg" alt="Avatar de usuario">
+                <div class="online__status"></div>
+            </div>
+            <div class="avatar__name hide">
+                <div class="user-name">Batman</div>
+                <div class="email">batman@gotica.com</div>
+            </div>
+            <a href="#logout" class="logout hide">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" aria-labelledby="logout-icon" role="img">
+                    <title id="logout-icon">Cerrar Sesión</title>
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                    <path d="M9 12h12l-3 -3"></path>
+                    <path d="M18 15l3 -3"></path>
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+
+</html>
