@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
-        <meta name="description" content="Tarjeta de perfil profesional con modo oscuro.">
-        <title>Card Portafolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-        >
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <div class="container">       
-            <article class="card">
-                <div class='background'>
-                    <img src="assets/avatar.jpg" alt="profile">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
+    <meta name="description" content="Tarjeta de perfil profesional con modo oscuro.">
+    <title>Card Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <article class="card">
+            <div class='background'>
+                <img src="assets/avatar.jpg" alt="profile">
+            </div>
+            <div class='content'>
+                <div class="header">
+                    <h2>Juancito Pinto</h2>
+                    <span class="divider">
+                        <button id="toggle-dark">🌙</button>
+                    </span>
                 </div>
-                <div class='content'>
-                    <div class="header">
-                        <h2>Juancito Pinto</h2>
-                        <span class="divider">
-                            <button id="toggle-dark">🌙</button>
-                        </span>
-                    </div>
-                    <p>
-                        Ingeniero Full-stack en 
-                        <a href="https://google.com" title="Google">
-                            Google
-                        </a>
-                    </p>
-                    <p>Habilidades:</p>
-                    <ul class="chips">
-                        <li class="chip">React.js</li>
-                        <li class="chip">Node.js</li>
-                        <li class="chip">Laravel</li>
-                        <li class="chip">PostgreSQL</li>
-                    </ul>
-                    <div class="action-buttons">
-                        <a href="#book-a-mentor">
-                            Reserva un lector
-                        </a>
-                        <a href="#learn-more" class="secondary">
-                            Aprende más
-                        </a>
-                    </div>
+                <p>
+                    Ingeniero Full-stack en
+                    <a href="https://google.com" title="Google">
+                        Google
+                    </a>
+                </p>
+                <p>Habilidades:</p>
+                <ul class="chips">
+                    <li class="chip">React.js</li>
+                    <li class="chip">Node.js</li>
+                    <li class="chip">Laravel</li>
+                    <li class="chip">PostgreSQL</li>
+                </ul>
+                <div class="action-buttons">
+                    <a href="#book-a-mentor">
+                        Reserva un lector
+                    </a>
+                    <a href="#learn-more" class="secondary">
+                        Aprende más
+                    </a>
                 </div>
-            </article>
-        </div>
-        <script src="script.js"></script>
-    </body>
+            </div>
+        </article>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
-
-
-

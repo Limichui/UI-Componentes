@@ -1,110 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
-        <meta name="description" content="Notificaciones tipo toast con diferentes estados y animaciones.">
-        <title>Toast Notification</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-        >
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div 
-                class="notification notification--success"  
-                role="status"
-                aria-live="polite"
-                aria-label="Success notification: Your account has been created"
-            >
-                <div class="notification__body">
-                    <img
-                        src="assets/check-circle.svg"
-                        alt="Success"
-                        aria-hidden="true"
-                        class="notification__icon"
-                    >
-                    ¡Tu cuenta ha sido creada! &#128640; 
-                </div>
-                <div class="notification__progress"></div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
+    <meta name="description" content="Notificaciones tipo toast con diferentes estados y animaciones.">
+    <title>Toast Notification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="notification notification--success" role="status" aria-live="polite"
+            aria-label="Success notification: Your account has been created">
+            <div class="notification__body">
+                <img src="assets/check-circle.svg" alt="Success" aria-hidden="true" class="notification__icon">
+                ¡Tu cuenta ha sido creada! &#128640;
             </div>
-            <div 
-                class="notification notification--failure"  
-                role="alert"
-                aria-live="assertive"
-                aria-label="Error notification: Account creation failed"
-            >
-                <div class="notification__body">
-                    <img
-                        src="assets/cross-circle.svg"
-                        alt="Failure"
-                        aria-hidden="true"
-                        class="notification__icon"
-                    >
-                    ¡La creación de la cuenta ha fallado! &#128543;
-                </div>
-                <div class="notification__progress"></div>
-            </div>
-            <div 
-                class="notification notification--warning"
-                role="alert"
-                aria-live="assertive"
-                aria-label="Warning notification: A new software update is available"
-            >
-                <div class="notification__body">
-                    <img
-                        src="assets/warning-triangle.svg"
-                        alt="Warning"
-                        class="notification__icon"
-                        aria-hidden="true"
-                    >
-                    ¡Nueva actualización de software disponible!
-                </div>
-                <div class="notification__progress"></div>
-            </div>
-            <div 
-                class="notification notification--info" 
-                role="status" 
-                aria-live="polite"
-                aria-label="Information notification: A new message has been received"
-            >
-                <div class="notification__body">
-                    <img
-                        src="assets/info-circle.svg"
-                        alt="Info"
-                        class="notification__icon"
-                        aria-hidden="true"
-                    >
-                    ¡Has recibido un nuevo mensaje!
-                </div>
-                <div class="notification__progress"></div>
-            </div>
-            <div 
-                class="notification notification--finalised"
-                role="status"
-                aria-live="polite"
-                aria-label="Notification: Data export has been finalised"
-            >
-                <div class="notification__body">
-                    <img
-                        src="assets/finalised-circle.svg"
-                        alt="Finalised"
-                        class="notification__icon"
-                        aria-hidden="true"
-                    >
-                    ¡La exportación de datos ha finalizado!
-                </div>
-                <div class="notification__progress"></div>
-            </div>
+            <div class="notification__progress"></div>
         </div>
-    </body>
+        <div class="notification notification--failure" role="alert" aria-live="assertive"
+            aria-label="Error notification: Account creation failed">
+            <div class="notification__body">
+                <img src="assets/cross-circle.svg" alt="Failure" aria-hidden="true" class="notification__icon">
+                ¡La creación de la cuenta ha fallado! &#128543;
+            </div>
+            <div class="notification__progress"></div>
+        </div>
+        <div class="notification notification--warning" role="alert" aria-live="assertive"
+            aria-label="Warning notification: A new software update is available">
+            <div class="notification__body">
+                <img src="assets/warning-triangle.svg" alt="Warning" class="notification__icon" aria-hidden="true">
+                ¡Nueva actualización de software disponible!
+            </div>
+            <div class="notification__progress"></div>
+        </div>
+        <div class="notification notification--info" role="status" aria-live="polite"
+            aria-label="Information notification: A new message has been received">
+            <div class="notification__body">
+                <img src="assets/info-circle.svg" alt="Info" class="notification__icon" aria-hidden="true">
+                ¡Has recibido un nuevo mensaje!
+            </div>
+            <div class="notification__progress"></div>
+        </div>
+        <div class="notification notification--finalised" role="status" aria-live="polite"
+            aria-label="Notification: Data export has been finalised">
+            <div class="notification__body">
+                <img src="assets/finalised-circle.svg" alt="Finalised" class="notification__icon" aria-hidden="true">
+                ¡La exportación de datos ha finalizado!
+            </div>
+            <div class="notification__progress"></div>
+        </div>
+    </div>
+</body>
+
 </html>
-
-

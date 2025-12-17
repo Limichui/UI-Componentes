@@ -37,9 +37,12 @@ Es especialmente útil para:
 - Profile
     - [profile-1](https://github.com/Limichui/UI-Componentes/tree/master/profile/profile-1): Portafolio en HTML, CSS y JS. 
 - Navbar / Sidebar
+    - [sidebar-1](https://github.com/Limichui/UI-Componentes/tree/master/sidebars/sidebar-1): Sidebar en HTML, CSS y JS. 
+- Drag & Drops
+    - [team-members](https://github.com/Limichui/UI-Componentes/tree/master/drag-and-drops/team-members): Drag & Drops en HTML, CSS y JS
 - Button  
 - Input & Forms 
-- password-checkers
+- Password Checkers
     - [password-validator-cyber-punk](https://github.com/Limichui/UI-Componentes/tree/master/password-checkers/password-validator-cyber-punk): Validador de contraseñas con indicadores de fuerza y requisitos, en HTML, CSS y JS.
 - Modal  
 - Cards
