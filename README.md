@@ -39,7 +39,7 @@ Es especialmente útil para:
 - Navbar / Sidebar
     - [sidebar-1](https://github.com/Limichui/UI-Componentes/tree/master/sidebars/sidebar-1): Sidebar en HTML, CSS y JS. 
 - Drag & Drops
-    - [team-members](https://github.com/Limichui/UI-Componentes/tree/master/drag-and-drops/team-members): Drag & Drops en HTML, CSS y JS
+    - [team-members](https://github.com/Limichui/UI-Componentes/tree/master/drag-and-drops/team-members): Drag & Drop en HTML, CSS y JS
 - Button  
 - Input & Forms 
 - Password Checkers
@@ -48,7 +48,9 @@ Es especialmente útil para:
 - Cards
     - [responsive-profile-card-1](https://github.com/Limichui/UI-Componentes/tree/master/cards/profile-card-1): Card de un portafolio en HTML, CSS y JS
 - Alert / Toast 
-- Loader / Spinner  
+- Loader / Spinner
+- Tables
+    - [resizable-sortable-table-with-selectable-rows](https://github.com/Limichui/UI-Componentes/tree/master/tables/resizable-sortable-table-with-selectable-rows): Table en HTML, CSS y JS  
 - Tabs / Accordion  
 - Tooltip 
 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Team Table (dark UI)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="https://github.com/Limichui/UI-Componentes/tree/master">
+    <meta name="description"
+        content="Una tabla redimensionable y ordenable con filas seleccionables creada con HTML, CSS y JavaScript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article class="table-widget">
+        <div class="caption">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+                Compras Recientes
+            </h2>
+            <button class="export-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-export" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M11.5 21h-4.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v5m-5 6h7m-3 -3l3 3l-3 3" />
+                </svg>
+                Exportar
+            </button>
+        </div>
+        <table id="team-table">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" class="resizable rowCheckbox" id="selectAllCheckbox">
+                    </th>
+                    <th class="resizable sortable" data-column="0">Id</th>
+                    <th class="resizable sortable" data-column="1">Fecha de Compra</th>
+                    <th class="resizable sortable" data-column="2">Esatdo</th>
+                    <th class="resizable sortable" data-column="3">Usuario</th>
+                    <th class="resizable sortable" data-column="4">Tipo de Order</th>
+                    <th class="resizable sortable" data-column="5">Monto</th>
+                </tr>
+            </thead>
+            <tbody id="team-member-rows">
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1001</td>
+                    <td>13 Sep, 10:01</td>
+                    <td><span class="status status--filled">Pagado</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/clark.jpg" alt="Avatar" class="avatar">
+                            Clark Kent
+                        </div>
+                    </td>
+                    <td>
+                        Desarrollor Frontend Moderno
+                    </td>
+                    <td>$256.00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1002</td>
+                    <td>13 Sep, 10:07</td>
+                    <td><span class="status status--filled">Pagado</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/diana.jpg" alt="Avatar" class="avatar">
+                            Princesa Diana
+                        </div>
+                    </td>
+                    <td>
+                        Suscripción a Detective Comics
+                    </td>
+                    <td>$99.44</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1003</td>
+                    <td>13 Sep, 10:12</td>
+                    <td><span class="status status--pending">Pendiente</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/bruce.jpg" alt="Avatar" class="avatar">
+                            Bruce Wayne
+                        </div>
+                    </td>
+                    <td>
+                        Desarrollor Frontend Moderno
+                    </td>
+                    <td>$235.00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1004</td>
+                    <td>13 Sep, 10:19</td>
+                    <td><span class="status status--filled">Pagado</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/arthur.jpg" alt="Avatar" class="avatar">
+                            Arthur Curry
+                        </div>
+                    </td>
+                    <td>
+                        Suscripción a Detective Comics
+                    </td>
+                    <td>$15.44</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1005</td>
+                    <td>13 Sep, 10:24</td>
+                    <td><span class="status status--cancelled">Canceled</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/barry.jpg" alt="Avatar" class="avatar">
+                            Barry Allen
+                        </div>
+                    </td>
+                    <td>
+                        Desarrollor Frontend Moderno
+                    </td>
+                    <td>$42.00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1006</td>
+                    <td>13 Sep, 10:31</td>
+                    <td><span class="status status--pending">Pendiente</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/oliver.jpg" alt="Avatar" class="avatar">
+                            Olever Queen
+                        </div>
+                    </td>
+                    <td>
+                        Proceso de Diseño UX UI
+                    </td>
+                    <td>$95.00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="rowCheckbox"></td>
+                    <td>1007</td>
+                    <td>13 Sep, 10:38</td>
+                    <td><span class="status status--filled">Pagado</span></td>
+                    <td>
+                        <div class="avatar__wrapper">
+                            <img src="assets/kara.jpg" alt="Avatar" class="avatar">
+                            Kara Danvers
+                        </div>
+                    </td>
+                    <td>
+                        Desarrollo Frontend Moderno
+                    </td>
+                    <td>$56.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            Resultados de 7 filas
+        </footer>
+    </article>
+    <script src="script.js"></script>
+</body>
+
+</html>
